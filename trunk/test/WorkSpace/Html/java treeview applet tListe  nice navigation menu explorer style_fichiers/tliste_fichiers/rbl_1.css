@@ -1,0 +1,120 @@
+BODY {
+	COLOR: #2020aa; FONT: 9pt verdana, arial, helvetica, sans-serif; MARGIN-LEFT: 0%; MARGIN-RIGHT: 0%
+}
+A:visited {
+	COLOR: #8080a0
+}
+A:link {
+	COLOR: #2020a0
+}
+A:hover {
+	COLOR: #ff4030
+}
+TABLE {
+	COLOR: #2020a0
+}
+TH {
+	BACKGROUND: #2020a0; COLOR: #d0f0ff
+}
+.n {
+	BACKGROUND: #c0c0c0
+}
+.n2 {
+	BACKGROUND: #ffffff; FONT: 9pt verdana, arial, helvetica, sans-serif
+}
+.about {
+	BACKGROUND-IMAGE: url(../img/f_about.gif); FONT: 10pt verdana, arial, helvetica, sans-serif
+}
+.pre {
+	BACKGROUND: #ffffff; COLOR: #000000; FONT: 8pt "Courier New", Monospace
+}
+.p0 {
+	BACKGROUND: #2020a0; COLOR: #d0f0ff
+}
+.p1 {
+	BACKGROUND: url(../img/cs1.gif) #2020a0; COLOR: #d0f0ff; FONT: bold 11pt verdana, arial, helvetica, sans-serif; TEXT-ALIGN: left
+}
+A.p1:hover {
+	COLOR: #ffffd0
+}
+A.p1b {
+	COLOR: #d0f0ff; FONT: bold 11pt verdana, arial, helvetica, sans-serif; TEXT-ALIGN: left
+}
+A.p1b:hover {
+	COLOR: #ffffd0
+}
+A.p1b:visited {
+	COLOR: #c0d0f0
+}
+.p2 {
+	BACKGROUND: #d0f0ff; COLOR: #2020a0; FONT: bold 9pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt; TEXT-ALIGN: left
+}
+.p2r {
+	BACKGROUND: #d0f0ff; COLOR: #2020a0; FONT: bold 9pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt; TEXT-ALIGN: left
+}
+.p2l {
+	BACKGROUND: #ffffff; COLOR: #2020a0; FONT: 9pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt; TEXT-ALIGN: left
+}
+.p2r {
+	FONT-WEIGHT: normal; TEXT-ALIGN: right
+}
+.p3 {
+	BACKGROUND: #ffffff; COLOR: #2020a0; FONT: 9pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt; MARGIN-TOP: 6px; TEXT-ALIGN: left
+}
+A.p3:hover {
+	BACKGROUND: #fff0a0; COLOR: #2000a0
+}
+A.p1b:visited {
+	COLOR: #4040a0
+}
+.t4 {
+	BACKGROUND: #f0f0f0; COLOR: #2020a0; FONT: 9pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt
+}
+A.t4:hover {
+	BACKGROUND: #fff0a0; COLOR: #2000a0
+}
+.tit {
+	FONT: bold 18pt/22pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 2pt; TEXT-ALIGN: center
+}
+A.a1 {
+	COLOR: #d0f0ff
+}
+.a1 {
+	BACKGROUND: #2020a0; COLOR: #d0f0ff; FONT: bold 10pt verdana, arial, helvetica, sans-serif
+}
+A.a1:hover {
+	COLOR: #ffffd0
+}
+A.a1:visited {
+	TEXT-DECORATION: none
+}
+.b0 {
+	BACKGROUND: #d0f0ff; COLOR: #2020a0; FONT: 10pt verdana, arial, helvetica, sans-serif
+}
+b1 {
+	BACKGROUND: #d0f0ff; COLOR: #2020a0; FONT: 10pt verdana, arial, helvetica, sans-serif
+}
+.b1 {
+	FONT: 11pt verdana, arial, helvetica, sans-serif
+}
+UL.u0 {
+	FONT: 9pt verdana, arial, helvetica, sans-serif; LIST-STYLE: outside; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 15pt; MARGIN-TOP: 0px
+}
+UL.u1 {
+	FONT: 9pt verdana, arial, helvetica, sans-serif; LIST-STYLE: outside; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 22pt; MARGIN-TOP: 0px
+}
+UL.u1b {
+	FONT: 9pt verdana, arial, helvetica, sans-serif; LIST-STYLE: outside; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 22pt; MARGIN-TOP: 0px
+}
+UL.u1b {
+	MARGIN-RIGHT: 5px; TEXT-ALIGN: justify
+}
+UL.u2 {
+	FONT: 11pt/15pt verdana, arial, helvetica, sans-serif; LIST-STYLE: url(../img/img0.gif) outside; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 25pt; MARGIN-TOP: 10px
+}
+UL.u3 {
+	FONT: 9pt verdana, arial, helvetica, sans-serif; LIST-STYLE: outside; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 25px; MARGIN-TOP: 10px; TEXT-ALIGN: justify
+}
+H3 {
+	COLOR: #2020a0; FONT: bold 11pt verdana, arial, helvetica, sans-serif; LETTER-SPACING: 0pt
+}

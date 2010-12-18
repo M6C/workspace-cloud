@@ -1,0 +1,10 @@
+<!DOCTYPE ROOT>
+<ROOT>
+	<DATABASE-CONNECT>
+		<DRIVER>com.mysql.jdbc.Driver</DRIVER>
+		<URL>jdbc:mysql://localhost/db_hibernate</URL>
+		<FILE/>
+		<USER>root</USER>
+		<PASSWORD/>
+	</DATABASE-CONNECT>
+</ROOT>

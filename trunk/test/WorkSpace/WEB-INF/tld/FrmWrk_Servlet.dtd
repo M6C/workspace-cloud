@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- Element Principale -->
+<!ELEMENT ROOT ( QUERY*, BEAN*, FORWARD*, FORWARDERROR*, SERVLET* )>
+
+<!-- Servlet correspondant à une action de l'utilisateur -->
+<!ELEMENT SERVLET ( BEAN*, FORWARD*, FORWARDERROR* ) >
+<!-- Nom de l'action appelamp;eacute; par la requête -->
+<!ATTLIST SERVLET Name CDATA #REQUIRED >
+<!-- class d'instance de la servlet -->
+<!ATTLIST SERVLET Class CDATA #IMPLIED >
+<!-- Page de redirection (Si commence par # alors recherche la valeur de la
+chaine suivant dans la requête pour la detination de la redirection -->
+<!ATTLIST SERVLET Target CDATA #IMPLIED >
+<!-- Page de redirection en cas d'erreur (Si commence par # alors recherche la
+valeur de la chaine suivant dans la requête pour la detination de la redirection -->
+<!ATTLIST SERVLET TargetError CDATA #IMPLIED >
+<!-- Indique si la l'accès à l'action requier une authentification (Value: "true" "false") [optional : by default "true"]
+(Si commence par # alors recherche la valeur de la chaine suivant dans la requête pour la detination de la redirection -->
+<!ATTLIST SERVLET Authentification ( true | false ) #IMPLIED >
+
+<!-- Bean de Stockage des donnamp;eacute;es Retournamp;eacute;e par la base -->
+<!ELEMENT BEAN ( PARAM*, QUERY* ) >
+<!-- Nom du bean utilisamp;eacute; pour le stockage dans le Scope -->
+<!ATTLIST BEAN Name CDATA #REQUIRED >
+<!-- Class d'instance du bean -->
+<!ATTLIST BEAN Class CDATA #IMPLIED >
+<!-- Scope d'accessibilitamp;eacute; du bean (Value: "session" "request") [optional : by defaut "request"] -->
+<!ATTLIST BEAN Scope ( request | session ) #IMPLIED >
+<!-- Nom du service qui va être executer après la cramp;eacute;ation du bean [optional] -->
+<!ATTLIST BEAN Service CDATA #IMPLIED >
+
+<!-- Parametre à passer à la requete SQL -->
+<!ELEMENT PARAM EMPTY >
+<!-- Nom du paramêtre SQL. Utilisamp;eacute; pour recuperer la valeur soit en "session"
+soit en "request" soit à partir d'un bean ( si l'attribut bean est defini-->
+<!ATTLIST PARAM Name CDATA #REQUIRED >
+<!-- Type de parametre à passer à la requete SQL ( LIST | STRING | CURSOR | INTEGER | BOOLEAN | OBJECT ) -->
+<!ATTLIST PARAM Type CDATA #IMPLIED >
+<!-- Position du paramtre dans la requete [optional] par defaut position dans le fichier XML -->
+<!ATTLIST PARAM Index CDATA #IMPLIED >
+<!-- Defini si le parametre sera passamp;eacute; en entramp;eacute;e à la requête
+SQL ou stockera le resultat [optional] par defaut "IN"-->
+<!ATTLIST PARAM InOut ( OUT | IN ) #IMPLIED >
+<!-- Valeur par defaut du paramêtre [optional] par defaut "null" -->
+<!ATTLIST PARAM Default CDATA #IMPLIED >
+<!-- Class de stockage du resultat de la requete SQL
+dans le cas ou l'attribut InOut serait "OUT"-->
+<!ATTLIST PARAM Class CDATA #IMPLIED >
+<!-- Nom du bean qui contiend la valeur du paramêtre [optional] -->
+<!ATTLIST PARAM Bean CDATA #IMPLIED >
+<!-- Indique si le parametre est synchronise avec une valeur la requette [optional] par defaut "TRUE" -->
+<!ATTLIST PARAM Synchronize (TRUE | FALSE) #IMPLIED >
+
+<!-- Requête à executer en base et dont le resultat est stockamp;eacute; dans le bean -->
+<!ELEMENT QUERY ( #PCDATA ) >
+<!-- Nom de la requête -->
+<!ATTLIST QUERY Name CDATA #IMPLIED >
+<!-- Type de requete à executer -->
+<!ATTLIST QUERY Type (EXECUTE | STORED_PROCEDURE | QUERY | HIBERNATE) #REQUIRED >
+<!-- Nombre de parametre à passer à la requête [optional] par defaut 0 -->
+<!ATTLIST QUERY ParameterCount CDATA #IMPLIED >
+
+<!-- Redirection normale de la servlet -->
+<!ELEMENT FORWARD EMPTY >
+<!-- Nom de la redirection -->
+<!ATTLIST FORWARD Name ID #IMPLIED >
+<!-- Condition de redirection (redirection si l'amp;eacute;valuation de la condition est true)-->
+<!ATTLIST FORWARD Condition CDATA #IMPLIED >
+<!-- Valeur de remplacement des null du champ 'Condition' -->
+<!ATTLIST FORWARD ReplaceNullBy CDATA #IMPLIED >
+<!-- Adresse de redirection -->
+<!ATTLIST FORWARD Target CDATA #IMPLIED >
+
+<!-- Redirection en cas d'erreur de la servlet -->
+<!ELEMENT FORWARDERROR EMPTY >
+<!-- Nom de la redirection -->
+<!ATTLIST FORWARDERROR Name ID #IMPLIED >
+<!-- Condition de redirection (redirection si l'amp;eacute;valuation de la condition est true)-->
+<!ATTLIST FORWARDERROR Condition CDATA #IMPLIED >
+<!-- Valeur de remplacement des null du champ 'Condition' -->
+<!ATTLIST FORWARD ReplaceNullBy CDATA #IMPLIED >
+<!-- Adresse de redirection -->
+<!ATTLIST FORWARDERROR Target CDATA #IMPLIED >

@@ -1,0 +1,48 @@
+table.toolBar {
+	width:100%;
+	text-align: left;
+/*	background-color: white;*/
+	background-image: url(/WorkSpace/img/Style/Dark/ToolBar/toolbar01.jpg);
+	background-repeat: repeat-x;
+	background-position: right;
+}
+img.buttonOut {
+/*	background-color: #E8F8FF;*/
+	border: 1px solid #84B2C6;
+}
+img.buttonOver {
+	background-color: white;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOut {
+	background-color: white;
+	border: 1px solid buttonface;
+}
+img.buttonOptionOver01 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver02 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver03 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver04 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver05 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver06 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}
+img.buttonOptionOver07 {
+	background-color: #FFFFFF;
+	border: 1px solid #84B2C6;
+}

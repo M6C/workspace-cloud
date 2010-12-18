@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.generic.runtimeTarget/JBoss v4.0"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/FrameWork/lib/FrameWork.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-antlr.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-bcel.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-bsf.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-log4j.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-oro.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-regexp.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-apache-resolver.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-commons-logging.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-commons-net.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-jai.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-javamail.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-jdepend.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-jmf.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-jsch.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-junit.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-launcher.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-netrexx.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-nodeps.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-starteam.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-stylebook.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-swing.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-testutil.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-trax.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant-weblogic.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/ant.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ant/1.7.1/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/cvslib_36.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/JevaESUI2001-03-03.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/mysql-connector-java-5.1.5-bin.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/ShowDTDTree.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Lib/lib/tools.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_TagLib/lib/FrameWork_TagLib.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Trace/lib/FrameWork_Trace.jar"/>
+	<classpathentry kind="lib" path="/FrameWork_Util/lib/FrameWork_Util.jar"/>
+	<classpathentry kind="output" path="WorkSpace/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,107 @@
+@import url ("/WorkSpace/css/toolbar/ToolBar_Info03.css");
+@import url ("/WorkSpace/css/component/treeview/TreeView_Info03.css");
+@import url ("/WorkSpace/css/component/treeview/TreeViewFile_Info03.css");
+@import url ("/WorkSpace/css/component/combo/Completion_Info03.css");
+
+body {
+	background-image: url(/WorkSpace/img/Style/Informatique/Background/info03.jpg);
+/*	background-color: white;*/
+	background-attachment:fixed;
+	scrollbar-face-color: white;
+	scrollbar-highlight-color: #84B2C6;
+	scrollbar-3dlight-color: white;
+	scrollbar-darkshadow-color: white;
+	scrollbar-shadow-color: #84B2C6;
+	scrollbar-arrow-color: #84B2C6;
+	scrollbar-track-color: #E8F8FF;
+}
+/*                 TextEditor                      */
+textarea.TextEditor {
+	overflow-x:auto;
+	overflow-y:auto;
+/*	background-color: white;*/
+	border: 1px solid #84B2C6;
+}
+textarea {
+	border: 1px solid #84B2C6;
+}
+/*                   Input                         */
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#505050;
+	background-color:#E8F8FF;
+	border-color:#84B2C6;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+/*                   Select                        */
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color:#505050;
+	background-color:#E8F8FF;
+	border-color:#84B2C6;
+	border: #E8F8FF;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+/*                     Img                         */
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+/*                    Font                        */
+font.normal {
+	color: white;
+}
+font.inverse {
+	color: black;
+}
+
+iframe.texteditor {
+	border: 1px solid #555577;
+	font-family:sans-serif;
+	font-size:10%;
+	font-weight:bold;
+}
+
+/*-- Transparency --*/
+td.treeviewMain {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+input {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+textarea.TreeView_Content_ScrollBar {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+#theTableToDo {
+}
+#theTableResolved {
+}
+#theCellToDo {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+#theCellResolved {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}

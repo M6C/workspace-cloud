@@ -1,0 +1,580 @@
+<!DOCTYPE ROOT SYSTEM "FrmWrk_Servlet.dtd">
+<ROOT>
+    <BEAN Name="beanSchemaList" Service="framework.service.SrvFindList" Class="framework.beandata.BeanFindList" Scope="request">
+        <QUERY Type="QUERY">SELECT * FROM information_schema.SCHEMATA</QUERY>
+    </BEAN>
+    <BEAN Name="beanTableList" Service="framework.service.SrvFindList" Class="framework.beandata.BeanFindList" Scope="request">
+        <PARAM Name="schema" Type="STRING"/>
+        <QUERY Type="QUERY" ParameterCount="1">SELECT * FROM information_schema.TABLES WHERE TABLE_SCHEMA = ?</QUERY>
+    </BEAN>
+    <BEAN Name="beanColumnList" Service="framework.service.SrvFindList" Class="framework.beandata.BeanFindList" Scope="request">
+        <PARAM Name="schema" Type="STRING"/>
+        <PARAM Name="table" Type="STRING"/>
+        <QUERY Type="QUERY" ParameterCount="1">SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = ? AND TABLE_NAME = ?</QUERY>
+    </BEAN>
+    <BEAN Name="beanFkColumnList" Service="framework.service.SrvFindList" Class="framework.beandata.BeanFindList" Scope="request">
+        <PARAM Name="schema" Type="STRING"/>
+        <PARAM Name="table" Type="STRING"/>
+        <PARAM Name="column" Type="STRING"/>
+        <QUERY Type="QUERY" ParameterCount="1">SELECT REFERENCED_TABLE_SCHEMA AS TABLE_SCHEMA, REFERENCED_TABLE_NAME AS TABLE_NAME, REFERENCED_COLUMN_NAME AS COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = ? AND TABLE_NAME = ? AND COLUMN_NAME = ?</QUERY>
+    </BEAN>
+    <SERVLET Name="Index" Target="/Web/Page/index.jsp" Authentification="false"/>
+    <SERVLET Name="Home" Target="/Web/Page/home.jsp"/>
+    <SERVLET Name="HomePopup" Target="/Web/Page/home_popup.jsp"/>
+    <SERVLET Name="IndexLoginValider" Target="/Web/Page/home_popup.jsp" TargetError="/Web/Page/index.jsp" Authentification="false">
+        <BEAN Name="BeanAuthentification" Scope="request" Service="workspace.service.SrvIndexLoginValider">
+            <PARAM Name="login" Type="STRING"/>
+            <PARAM Name="password" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPage" Target="/Web/Page/EditorJava/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvEditorJavaPage">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathToExpand" Type="STRING"/>
+            <PARAM Name="FileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageSave" Target="/Web/Page/EditorJava/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvEditorJavaValider">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="FileEditor" Type="STRING"/>
+            <PARAM Name="FileName" Type="STRING"/>
+            <PARAM Name="pathToExpand" Type="STRING"/>
+            <PARAM Name="navIndex" Type="STRING"/>
+            <PARAM Name="navNbRow" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="PageFileEditor" Target="/Web/Page/Common/PageFileEditor.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvEditorJavaPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="PageFileEditorValider" Target="/Web/Page/Common/PageFileEditor.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvEditorJavaValider">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="FileEditor" Type="STRING"/>
+            <PARAM Name="FileName" Type="STRING"/>
+            <PARAM Name="pathToExpand" Type="STRING"/>
+            <PARAM Name="navIndex" Type="STRING"/>
+            <PARAM Name="navNbRow" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageNew" Target="/Web/Page/Common/PageNew.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageNewValider" Target="/Web/Page/Common/PageNew.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaNew">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="Type" Type="STRING"/>
+            <PARAM Name="Path" Type="STRING"/>
+            <PARAM Name="Name" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageCompile" Target="/Web/Page/Common/PageCompile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageCompileValider" Target="/Web/Page/Common/PageCompile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaCompile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathSrc" Type="STRING"/>
+            <PARAM Name="pathDst" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageCompileClean" Target="/Web/Page/Common/PageMessage.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaCompileClean">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageCompileDirect" Target="/Web/Page/Common/PageMessage.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaCompile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathSrc" Type="STRING"/>
+            <PARAM Name="pathDst" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageJar" Target="/Web/Page/Common/PageJar.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageJarValider" Target="/Web/Page/Common/PageJar.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaPackage">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="package" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageWar" Target="/Web/Page/Common/PageWar.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageWarValider" Target="/Web/Page/Common/PageWar.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaPackage">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="package" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageWarClean" Target="/Web/Page/Common/PageWarClean.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageWarCleanValider" Target="/Web/Page/Common/PageWarClean.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaPackageClean">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="package" Type="STRING"/>
+            <PARAM Name="type" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageZip" Target="/Web/Page/Common/PageZip.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageZipValider" Target="/Web/Page/Common/PageZip.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaZip">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathSrc" Type="STRING"/>
+            <PARAM Name="pathDst" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageCopyMove" Target="/Web/Page/Common/PageCopyMove.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageCopyMoveValider" Target="/Web/Page/Common/PageCopyMove.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanCopyMove" Scope="request" Service="workspace.service.SrvEditorJavaCopyMove">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathSrc" Type="STRING"/>
+            <PARAM Name="pathDst" Type="STRING"/>
+            <PARAM Name="nameDst" Type="STRING"/>
+            <PARAM Name="operation" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageXmlXsl" Target="/Web/Page/Common/PageXmlXsl.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageXmlXslValider" Target="/Web/Page/Common/PageText.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanXmlXsl" Scope="request" Service="workspace.service.SrvEditorJavaXmlXsl">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathXml" Type="STRING"/>
+            <PARAM Name="xmlName" Type="STRING"/>
+            <PARAM Name="xmlScope" Type="STRING"/>
+            <PARAM Name="pathXsl" Type="STRING"/>
+            <PARAM Name="paramXsl" Type="STRING"/>
+            <PARAM Name="xslParamName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageXmlXsl" Target="/Web/Page/Common/PageXmlXsl.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageXmlXslValider" Target="/Web/Page/Common/PageText.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanXmlXsl" Scope="request" Service="workspace.service.SrvEditorJavaXmlXsl">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathXml" Type="STRING"/>
+            <PARAM Name="xmlName" Type="STRING"/>
+            <PARAM Name="xmlScope" Type="STRING"/>
+            <PARAM Name="pathXsl" Type="STRING"/>
+            <PARAM Name="paramXsl" Type="STRING"/>
+            <PARAM Name="xslParamName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaSplitFile" Target="/Web/Page/Common/PageSplitFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaSplitFileValider" Target="/Web/Page/Common/PageSplitFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanXmlXsl" Scope="request" Service="workspace.service.SrvEditorJavaSplitFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathFile" Type="STRING"/>
+            <PARAM Name="pathDestination" Type="STRING"/>
+            <PARAM Name="lineNumber" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageRename" Target="/Web/Page/Common/PageRename.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageRenameValider" Target="/Web/Page/Common/PageRename.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaRename">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="oldName" Type="STRING"/>
+            <PARAM Name="newName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageDelete" Target="/Web/Page/Common/PageDelete.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageDeleteValider" Target="/Web/Page/Common/PageDelete.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvEditorJavaDelete">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageUpload" Target="/Web/Page/Common/PageUpload.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="EditorJavaPageUploadValider" Target="/Web/Page/Common/PageUpload.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.SrvUpload">
+            <PARAM Name="application" Type="STRING"/>
+    </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageSelectDir" Target="/Web/Page/Common/PageSelectDir.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanSelectDir" Scope="request" Service="workspace.service.common.SrvSelectDirPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageSelectProjetDir" Target="/Web/Page/Common/PageSelectProjetDir.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanSelectProjetDir" Scope="request" Service="workspace.service.common.SrvSelectProjetDirPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageSelectProjetDirFile" Target="/Web/Page/Common/PageSelectProjetDirFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanSelectProjetDirFile" Scope="request" Service="workspace.service.common.SrvSelectProjetDirFilePage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaCompletion">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvEditorJavaCompletion">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="FileName" Type="STRING"/>
+            <PARAM Name="className" Type="STRING"/>
+            <PARAM Name="source" Type="STRING"/>
+            <PARAM Name="caretPos" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaCompileProject" Target="/Web/Page/Common/PageCompileProject.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanNewFile" Scope="request" Service="workspace.service.ant.SrvAntCompileProject">
+            <PARAM Name="application" Type="STRING"/>
+             <PARAM Name="target" Type="STRING"/>
+             <PARAM Name="className" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="EditorJavaPageZip" Target="/Web/Page/Common/PageZip.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="FileBrowserPage" Target="/Web/Page/FileBrowser/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvFileBrowserPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="ImageViewerPage" Target="/Web/Page/ImageViewer/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.SrvImageViewerPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="AdminPage" Target="/Web/Page/Admin/Page.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageExecCmd" Target="/Web/Page/Admin/PageExecCmd.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageExecCmdValider" Target="/Web/Page/Admin/PageExecCmd.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanExecCmd" Scope="request" Service="workspace.service.SrvAdminExecuteCmd"/>
+    </SERVLET>
+    <SERVLET Name="AdminPageExecShutdown" Target="/Web/Page/Admin/PageExecShutdown.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageExecShutdownValider" Target="/Web/Page/Admin/PageExecShutdown.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanExecCmd" Scope="request" Service="workspace.service.SrvAdminExecuteCmd"/>
+    </SERVLET>
+    <SERVLET Name="AdminPageDBShutdown" Target="/Web/Page/Admin/PageDBShutdown.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageDBShutdownValider" Target="/Web/Page/Admin/PageDBShutdown.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanExecCmd" Scope="request" Service="workspace.service.SrvAdminExecuteCmd"/>
+    </SERVLET>
+    <SERVLET Name="AdminPageDBStartup" Target="/Web/Page/Admin/PageDBStartup.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageDBStartupValider" Target="/Web/Page/Admin/PageDBStartup.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanExecCmd" Scope="request" Service="workspace.service.SrvAdminExecuteCmd"/>
+    </SERVLET>
+    <SERVLET Name="AdminPageExecReboot" Target="/Web/Page/Admin/PageExecReboot.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminPageExecRebootValider" Target="/Web/Page/Admin/PageExecReboot.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanExecCmd" Scope="request" Service="workspace.service.SrvAdminExecuteCmd"/>
+    </SERVLET>
+    <SERVLET Name="AdminPageScreenShoot" Target="/Web/Page/Common/PageScreenShoot.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="AdminScreenMousePress">
+        <BEAN Name="BeanMousePress" Scope="request" Service="workspace.service.SrvAdminScreenMousePress"/>
+    </SERVLET>
+    <SERVLET Name="AdminScreenMouseRelease">
+        <BEAN Name="BeanMouseRelease" Scope="request" Service="workspace.service.SrvAdminScreenMouseRelease"/>
+    </SERVLET>
+    <SERVLET Name="VersionPage" Target="/Web/Page/Versioning/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanEditorJava" Scope="request" Service="workspace.service.versioning.SrvVersionPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionningPageSubmit" Target="/Web/Page/Versioning/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanVersionning" Scope="request" Service="workspace.service.SrvVersionningPageSubmit">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathToExpand" Type="STRING"/>
+            <PARAM Name="fileName" Type="LIST"/>
+            <PARAM Name="verAction" Type="LIST"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionAddFile" Target="/Web/Page/Versioning/PageAddFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionAddFileValider" Target="/Web/Page/Versioning/PageAddFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSAddFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="autocommit" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionAddDirectory" Target="/Web/Page/Versioning/PageAddDirectory.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionAddDirectoryValider" Target="/Web/Page/Versioning/PageAddDirectory.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSAddDirectory">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+            <PARAM Name="autocommit" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionRemoveFile" Target="/Web/Page/Versioning/PageRemoveFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionRemoveFileValider" Target="/Web/Page/Versioning/PageRemoveFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSRemoveFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="autocommit" Type="STRING" Default="true"/>
+            <PARAM Name="autoupdate" Type="STRING" Default="true"/>
+            <PARAM Name="deletefirst" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionRemoveDirectory" Target="/Web/Page/Versioning/PageRemoveDirectory.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionRemoveDirectoryValider" Target="/Web/Page/Versioning/PageRemoveDirectory.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSRemoveDirectory">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+            <PARAM Name="autoupdate" Type="STRING" Default="true"/>
+            <PARAM Name="deletefirst" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionCommitFile" Target="/Web/Page/Versioning/PageCommitFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionCommitFileValider" Target="/Web/Page/Versioning/PageCommitFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSCommitFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionCommitDirectory" Target="/Web/Page/Versioning/PageCommitDirectory.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionCommitDirectoryValider" Target="/Web/Page/Versioning/PageCommitDirectory.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSCommitDirectory">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionUpdFile" Target="/Web/Page/Versioning/PageUpdFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionUpdFileValider" Target="/Web/Page/Versioning/PageUpdFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSUpdFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionUpdDirectory" Target="/Web/Page/Versioning/PageUpdDirectory.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionUpdDirectoryValider" Target="/Web/Page/Versioning/PageUpdDirectory.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSUpdDirectory">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionCheckOut" Target="/Web/Page/Versioning/PageCheckOut.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionCheckOutValider" Target="/Web/Page/Versioning/PageCheckOut.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanCheckOut" Scope="request" Service="workspace.service.versioning.SrvCVSCheckout">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="repository" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionUpdate" Target="/Web/Page/Versioning/PageUpdate.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionUpdateValider" Target="/Web/Page/Versioning/PageUpdate.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanUpdate" Scope="request" Service="workspace.service.versioning.SrvCVSUpdate">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="repository" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionCommit" Target="/Web/Page/Versioning/PageCommit.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionCommitValider" Target="/Web/Page/Versioning/PageCommit.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanCommit" Scope="request" Service="workspace.service.versioning.SrvCVSCommit">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionImport" Target="/Web/Page/Versioning/PageImport.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionImportValider" Target="/Web/Page/Versioning/PageImport.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanImport" Scope="request" Service="workspace.service.versioning.SrvCVSImport">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="repository" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="vendorTag" Type="STRING"/>
+            <PARAM Name="releaseTag" Type="STRING"/>
+            <PARAM Name="messageStr" Type="STRING"/>
+            <PARAM Name="autoupdate" Type="STRING" Default="true"/>
+        </BEAN>
+<!--
+        <BEAN Name="BeanImport" Scope="request" Service="workspace.service.versioning.SrvCVSImport">
+            <PARAM Name="keyPrj" Type="STRING"/>
+        </BEAN>
+-->
+    </SERVLET>
+    <SERVLET Name="VersionStatus" Target="/Web/Page/Versioning/PageStatus.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionStatusFile" Target="/Web/Page/Versioning/PageStatusFile.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionStatusFileValider" Target="/Web/Page/Versioning/PageStatusFile.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSStatusFile">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionStatusDirectory" Target="/Web/Page/Versioning/PageStatusDirectory.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionStatusDirectoryValider" Target="/Web/Page/Versioning/PageStatusDirectory.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanProject" Scope="request" Service="workspace.service.versioning.SrvCVSStatusDirectory">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="userName" Type="STRING"/>
+            <PARAM Name="passWord" Type="STRING"/>
+            <PARAM Name="hostname" Type="STRING"/>
+            <PARAM Name="port" Type="STRING"/>
+            <PARAM Name="rootDirectory" Type="STRING"/>
+            <PARAM Name="localDirectory" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+            <PARAM Name="recursive" Type="STRING" Default="true"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionIgnoreAdd" Target="/Web/Page/Versioning/PageIgnoreAdd.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionIgnoreAddValider" Target="/Web/Page/Versioning/PageIgnoreAdd.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanIgnore" Scope="request" Service="workspace.service.versioning.SrvCVSIgnoreAdd">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionIgnoreDel" Target="/Web/Page/Versioning/PageIgnoreDel.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="VersionIgnoreDelValider" Target="/Web/Page/Versioning/PageIgnoreDel.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanIgnore" Scope="request" Service="workspace.service.versioning.SrvCVSIgnoreDel">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="fileName" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="VersionHelp" Target="/Web/Page/Versioning/PageHelp.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanHelp" Scope="request" Service="workspace.service.versioning.SrvCVSHelp">
+            <PARAM Name="keyPrj" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="DebuggerPage" Target="/Web/Page/Debugger/Page.jsp" TargetError="/Web/Page/index.jsp">
+        <BEAN Name="BeanDebuggerPage" Scope="request" Service="workspace.service.debug.SrvDebuggerPage">
+            <PARAM Name="application" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointAdd" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerAdd" Scope="session" Service="workspace.service.debug.SrvDebugBreakpointAdd">
+            <PARAM Name="breakpointClass" Type="STRING"/>
+            <PARAM Name="breakpointLine" Type="STRING"/>
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="pathToExpand" Type="STRING"/>
+            <PARAM Name="FileName" Type="STRING"/>
+            <PARAM Name="virtualMachine" Type="OBJECT" Synchronize="FALSE"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointCheck" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerCheck" Scope="session" Service="workspace.service.debug.SrvDebugBreakpointCheck"/>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointStep" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerStep" Scope="session" Service="workspace.service.debug.SrvDebugBreakpointStep">
+            <PARAM Name="step" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointResume" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerResume" Scope="session" Service="workspace.service.debug.SrvDebugBreakpointResume"/>
+        <BEAN Name="BeanDebuggerResume" Scope="session" Service="workspace.service.debug.SrvDebugBreakpointResume"/>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointVariable" Target="/Web/Page/Common/PageMessage.jsp" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerVariable" Scope="request" Service="workspace.service.debug.SrvDebugBreakpointVariable"/>
+    </SERVLET>
+    <SERVLET Name="DebuggerBreakpointVariable2" Target="/Web/Page/Common/PageDebugVariable.jsp" TargetError="/Web/Page/Common/PageMessage.jsp"/>
+    <SERVLET Name="DebuggerStart" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerStart" Scope="session" Service="workspace.service.debug.SrvDebugStart"/>
+    </SERVLET>
+    <SERVLET Name="DebuggerStop" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanDebuggerStop" Scope="session" Service="workspace.service.debug.SrvDebugStop"/>
+    </SERVLET>
+    <SERVLET Name="ServerWebCommand" Target="/Web/Page/Common/PageServerWebCommand.jsp" TargetError="/Web/Page/Common/PageMessage.jsp"/>
+    <SERVLET Name="ServerWebCommandValider" Target="/Web/Page/Common/PageMessage.jsp" TargetError="/Web/Page/Common/PageMessage.jsp">
+        <BEAN Name="BeanServerWebCommand" Scope="session" Service="workspace.service.server.web.SrvServerCommand">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="command" Type="STRING"/>
+            <PARAM Name="package" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="PageMessage" Target="/Web/Page/Common/PageMessage.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="PageUser" Target="/Web/Page/Common/PageUser.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="test" Target="/Web/Page/test.jsp" TargetError="/Web/Page/test.jsp" Authentification="false"/>
+    <SERVLET Name="Reload" Target="/Web/Page/ReloadFrmWrk.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="PageDiaporama" Target="/Web/Page/PageDiaporama.jsp" TargetError="/Web/Page/index.jsp" Authentification="false"/>
+    <SERVLET Name="PageLeonie" Target="/Web/Page/PageLeonieOld.jsp" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="Redirect" Target="/Web/Page/redirect.jsp" Class="" TargetError="/Web/Page/index.jsp"/>
+    <SERVLET Name="HbnGeneratorJspTable" Target="/Web/Page/Hibernate/Page.jsp" TargetError="/Web/Page/index.jsp" Authentification="false">
+        <BEAN Name="beanSchemaList"/>
+    </SERVLET>
+    <SERVLET Name="HbnGeneratorJspTableValider" Target="/Web/Page/Hibernate/Page.jsp" TargetError="/Web/Page/index.jsp" Authentification="false">
+        <BEAN Name="beanSchemaList"/>
+        <BEAN Name="BeanServerWebCommand" Scope="session" Service="workspace.service.hibernate.generator.SrvJspTableValider">
+            <PARAM Name="schema" Type="STRING"/>
+            <PARAM Name="destination" Type="STRING"/>
+            <PARAM Name="xmldestination" Type="STRING"/>
+            <PARAM Name="xmlpathtarget" Type="STRING"/>
+            <PARAM Name="modelCount" Type="INTEGER"/>
+            <PARAM Name="xml" Type="STRING"/>
+            <PARAM Name="hbnpath" Type="STRING"/>
+            <PARAM Name="cbxCount" Type="INTEGER"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="AdminStreaming" Target="" TargetError="/Web/Page/index.jsp" Authentification="false">
+        <BEAN Name="beanAdminStreaming" Scope="session" Service="workspace.service.SrvAdminStreaming">
+            <PARAM Name="application" Type="STRING"/>
+            <PARAM Name="path" Type="STRING"/>
+            <PARAM Name="filename" Type="STRING"/>
+        </BEAN>
+    </SERVLET>
+    <SERVLET Name="TennisReservation" Target="/Web/Page/TennisReservation/PickingDay.jsp" Class="" TargetError="/Web/Page/TennisReservation/PickingDay.jsp" Authentification="false"/>
+</ROOT>

@@ -1,0 +1,8 @@
+@import url ("../../style/page.css");
+@import url ("table/tablescroll.css");
+
+table.fileList {
+	width:100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:8px;
+}
