@@ -1,9 +1,0 @@
-<project name="CompileProject" default="compile" basedir=".">
-    <target name="compile">
-    	<javac	srcdir="${java.src}"
-				destdir="${java.cls}"
-				deprecation="off"
-				classpath="${class.path}"
-    	/>
-    </target>
-</project>
