@@ -1,0 +1,21 @@
+/*                   ScrollBar                     */
+div.comboCompletion {
+	overflow-x:auto; 
+	overflow-y:auto;
+/*	background-color: white;*/
+	border: 1px solid #84B2C6;
+}
+/*                      Link                       */
+a.comboCompletion:link { 
+	color: black;//blue;
+}
+a.comboCompletion:visited { 
+	color: black;//blue;
+}
+a.comboCompletion:hover { 
+	color: black;//blue;
+/*	font-weight: bold; */
+}
+a.comboCompletion:active { 
+	color: #B8B8B8;
+}

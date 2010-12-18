@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0299)http://213.162.50.33/bandeaux/sncf/avril04/Comclick-RG-Banner-468x60-TRAIN-AVRIL2004.html?id_regie=1&num_editeur=8739&num_site=1&num_emplacement=1&num_campagne=1089&num_publicite=1&num_periode=2&strat=4&content=600&domaine=fl01.ct2.comclick.com&id_surfeur=ct2-115028432620576425541618646789905279690 -->
+<HTML><HEAD><TITLE>Publicité</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><!-------------------------------------------------------------------------------------------------->
+<META content=no-cache http-equiv=Pragma>
+<SCRIPT language=JavaScript>
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+//-->
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+		
+		//----------------------------------------------------------------------
+		// Ajout ComClick pour CT2
+		// Lectures des parametres de l'URL et placement dans un tableau ....
+		//----------------------------------------------------------------------
+		var ct2_paramtre = new Array();
+		ct2_param_str = location.search.split("&");
+		for (var i=0; i < ct2_param_str.length; i++) 
+		{
+			if (ct2_param_str[i].indexOf("?") == 0) 
+			{
+				toto = ct2_param_str[i].split("?")[1]; 
+			}
+			else 
+			{
+				toto = ct2_param_str[i]; 
+			}
+			ct2_array_param = toto.split("=");
+			ct2_paramtre[i] = new Array();
+			ct2_paramtre[i][0] = ct2_array_param[0];
+			ct2_paramtre[i][1] = ct2_array_param[1];
+		}
+
+		//----------------------------------------------------------------------
+		// Ajout ComClick pour CT2
+		// Lectures des parametres de l'URL et placement dans un tableau ....
+		//----------------------------------------------------------------------
+		function ct2_param(nom_param) 
+		{
+			for (var i=0; i < ct2_paramtre.length; i++) 
+			{
+				if (ct2_paramtre[i][0] == nom_param) 
+				{
+					return ct2_paramtre[i][1]; 
+				}
+			}
+		}
+		
+	
+	</SCRIPT>
+<!-------------------------------------------------------------------------------------------------->
+<META content="MSHTML 5.00.3502.5390" name=GENERATOR></HEAD>
+<BODY leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<SCRIPT language=JavaScript>
+		
+		var domaine		= ct2_param("domaine");
+		var id_regie 		= ct2_param("id_regie");
+		var num_editeur 	= ct2_param("num_editeur");
+		var num_site		= ct2_param("num_site");
+		var num_emplacement	= ct2_param("num_emplacement");
+		var num_campagne	= ct2_param("num_campagne");
+		var num_publicite	= ct2_param("num_publicite");
+		var num_periode		= ct2_param("num_periode");
+		var strat		= ct2_param("strat");
+		var content		= ct2_param("content");
+		
+		var timestamp = Math.round(Math.random()*10000);
+
+		document.write ('<SCR'+'IPT LANGUAGE=\'JavaScript\' SRC=http://s0b.bluestreak.com/ix.e?jss&s=297607&u=&n=' + timestamp + '&cltk=');
+			
+		
+		redirect2 = 'http://' + domaine + '/clic_bluestreak.ct2?' + 
+		'id_regie=' + id_regie + 
+		'&num_editeur='+ num_editeur + 
+		'&num_site=' + num_site +
+		'&num_emplacement=' + num_emplacement +
+		'&num_campagne=' + num_campagne +
+		'&num_publicite=' + num_publicite + 
+		'&num_periode=' + num_periode +
+		'&strat=' + strat +
+		'&delim=';
+		
+		document.write(redirect2);
+		document.write ('>');
+	
+		document.write ('<\/scr'+'ipt>');		
+			
+		self.focus();
+
+		
+	</SCRIPT>
+</BODY></HTML>

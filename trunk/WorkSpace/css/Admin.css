@@ -1,0 +1,12 @@
+body {
+	scrollbar-face-color: #CCCCCC
+	scrollbar-highlight-color: buttonface;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: buttonface;
+	scrollbar-shadow-color: #000000;
+	scrollbar-arrow-color: #000000;
+	scrollbar-track-color: buttonface;	
+}
+.memo {
+	background-color: buttonface;
+}

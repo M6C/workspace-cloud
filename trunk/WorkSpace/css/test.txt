@@ -1,0 +1,4 @@
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;unselectable=&quot;on&quot;&nbsp;onclick=&quot;javascript:EditCommand(&#039;saveas&#039;)&quot;&nbsp;class=&quot;memoOut&quot;&nbsp;align=&quot;absmiddle&quot;&nbsp;src=&quot;/Img/Editor/ed_align_right.gif&quot;&nbsp;onmouseover=&quot;this.className=&#039;memoOver&#039;;&quot;&nbsp;onmouseout=&quot;this.className=&#039;memoOut&#039;;&quot;&nbsp;title=&quot;Enregistrer&nbsp;sous...&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;unselectable=&quot;on&quot;&nbsp;onclick=&quot;javascript:ajouterlien()&quot;&nbsp;class=&quot;memoOut&quot;&nbsp;align=&quot;absmiddle&quot;&nbsp;src=&quot;/Img/Editor/ed_link.gif&quot;&nbsp;onmouseover=&quot;this.className=&#039;memoOver&#039;;&quot;&nbsp;onmouseout=&quot;this.className=&#039;memoOut&#039;;&quot;&nbsp;title=&quot;Insamp;eacute;rer&nbsp;un&nbsp;lien&quot;/&gt;
+&lt;/div&gt;

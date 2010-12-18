@@ -1,0 +1,42 @@
+table.toolBar {
+	width:100%;
+	text-align: left;
+/*	background-color: white;*/
+/*	background-image: url(/WorkSpace/img/Style/Snow/ToolBar/toolbar01.jpg);*/
+	background-repeat: repeat-x;
+	background-position: right;
+}
+img.buttonOut {
+/*	background-color: #E8F8FF;*/
+/*	border: 1px solid #84B2C6;*/
+	border: 0px;
+}
+img.buttonOver {
+	background-color: white;
+/*	border: 1px solid #84B2C6;*/
+	border: 0px;
+}
+img.buttonOptionOut {
+	background-color: #CCCCFA;
+}
+img.buttonOptionOver01 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver02 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver03 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver04 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver05 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver06 {
+	background-color: #FFFFFF;
+}
+img.buttonOptionOver07 {
+	background-color: #FFFFFF;
+}

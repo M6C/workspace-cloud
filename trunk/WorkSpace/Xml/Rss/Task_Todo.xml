@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0">
+<channel>
+<title>To Do</title>
+<description>RSS stream to do</description>
+<pubDate>01/01/2009</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+<item>
+<title>Editeur Java : FTP</title>
+<description>Dans l'editeur Java : Faire en sorte que l'on puisse travailler avec des chemins FTP au lieu de chemins locaux.</description>
+<pubDate>02/02/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : Watchs</title>
+<description>Dans le Debug : Pouvoir mettre des Watchs et evaluer des expressions.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : point d'arrêt</title>
+<description>Dans le Debug : Pouvoir mettre un point d'arrêt dans une class non encore chargamp;eacute; dans l'application à debugger.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : stocker les points d'arrets</title>
+<description>Dans le Debug : Pouvoir stocker les points d'arrets pour les recreer lorsqu'on selectionne un projet.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : deux fois 'Step over'</title>
+<description>Dans le Debug : Voir pourquoi il faut faire deux fois 'Step over' pour avancer après que l'on s'arrête la première fois sur un point d'arrêt.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : positionner dans la nouvelle class</title>
+<description>Dans le Debug : Rechercher et se positionner dans la nouvelle class lorsque le debug d'une class change de class après un 'Step Over'.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>fichiers contenant un '#'</title>
+<description>Voir le bug de suppression des fichiers contenant un '#' dans le nom.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Optimiser le taglib 'framework.taglib.list.TagList'</title>
+<description>Optimiser le taglib 'framework.taglib.list.TagList' si la liste est une Collection ou une Enumeration.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Desconnection d'un utilisateur</title>
+<description>Gerer la desconnection d'un utilisateur.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>bouton 'Save as...'</title>
+<description>Ajouter un bouton 'Save as...'. Avec une nouvelle icone.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Icone pour editer un fichier</title>
+<description>Faire une nouvelle icone pour editer un fichier dans l'explorateur de fichier.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Icone pour recharger le framework</title>
+<description>Faire une nouvelle icone pour recharger le framework.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Icone pour recharger la page de redirection</title>
+<description>Faire une nouvelle icone pour recharger la page de redirection.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Simuler une transaction de fichier</title>
+<description>Passer par un EJB Bean Session (simuler une transaction de fichier) pour :++++-+Donner un Id aleatoire en retour du chemin du fichier à modifier, si le fichier n'est pas damp;eacute;ja dans la Hashtable. Si non retourne le fichier contenu dans la Hashtable++++-+Garder les fichiers a modifier en memoire dans une Hashtable (Key: Id, Data: Bean contenant le contenu du fichier avec les modifications)++++-+Ne modifier le fichier que si on passe par un Id dans l'URL à la place du chemin du fichier, et si l'Id existe dans la Hashtable++++-+Pouvoir valider la transaction des fichiers dans CVS++++-+A la compilation, recuperer le contenu dans la hashtable et le compiler en class</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Problème de suppression et de renommage de fichier</title>
+<description>Voir le problème de suppression et de renommage de fichier (peut etre un problème de lock du fichier lors de la modification, copie, renommage).Après avoir copier un fichier dans un autre repertoire on ne peux plus le renommer.</description>
+<pubDate>01/01/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+</channel>
+</rss>
