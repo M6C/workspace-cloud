@@ -1,0 +1,51 @@
+/*                   ScrollBar                     */
+div.comboCompletion {
+    overflow-x:auto;
+    overflow-y:auto;
+    background-color: white;
+    border: 1px solid #84B2C6;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+}
+div.AutoComplete {
+       background-color: gray;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+}
+div.AutoCompleteHeader {
+       background-color: gray;
+       align:center;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+}
+div.AutoCompleteHighlight {
+       background-color: red;
+       align:center;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+}
+div.AutoCompleteBackground {
+    background-color: white;
+       align:left;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+}
+/*                      Link                       */
+a.comboCompletion:link {
+    color: black;//blue;
+}
+a.comboCompletion:visited {
+    color: black;//blue;
+}
+a.comboCompletion:hover {
+    color: black;//blue;
+/*    font-weight: bold; */
+}
+a.comboCompletion:active {
+    color: #B8B8B8;
+}

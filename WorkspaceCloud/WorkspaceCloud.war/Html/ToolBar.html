@@ -1,0 +1,41 @@
+<div class="memoBar">
+    <select onchange="EditCommand('FontName',this.options[this.selectedIndex].value)">
+        <option value="verdana">
+            Verdana
+        </option>
+        <option value="Comic Sans MS">
+            Comic Sans MS
+        </option>
+        <option value="Courier New">
+            Courier New
+        </option>
+        <option value="Fixedsys">
+            Fixedsys
+        </option>
+    </select>
+    <select onchange="EditCommand('fontsize',this.options[this.selectedIndex].value)">
+        <option value="1">
+            1
+        </option>
+        <option value="3" selected>
+            2
+        </option>
+        <option value="5">
+            3
+        </option>
+        <option value="7">
+            4
+        </option>
+    </select>
+    <img unselectable="on" onclick="javascript:EditCommand('bold')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_format_bold.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Gras (Ctrl + B)"/>
+    <img unselectable="on" onclick="javascript:EditCommand('italic')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_format_italic.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Italique (Ctrl + I)"/>
+    <img unselectable="on" onclick="javascript:EditCommand('underline')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_format_underline.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Soulignamp;eacute; (Ctrl + U)"/>
+    <img unselectable="on" onclick="javascript:EditCommand('justifyleft')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_align_left.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Aligner à gauche"/>
+    <img unselectable="on" onclick="javascript:EditCommand('justifycenter')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_align_center.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Aligner au centre"/>
+    <img unselectable="on" onclick="javascript:EditCommand('justifyright')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_align_right.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Aligner à droite"/>
+    &nbsp;
+    <img unselectable="on" onclick="javascript:EditCommand('selectall')" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_align_right.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Selectionner tout"/>
+    &nbsp;
+    <img unselectable="on" onclick="javascript:ajouterimage()" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_image.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Insamp;eacute;rer une image"/>
+    <img unselectable="on" onclick="javascript:ajouterlien()" class="memoOut" align="absmiddle" src="/WorkSpace/Img/Editor/ed_link.gif" onmouseover="this.className='memoOver';" onmouseout="this.className='memoOut';" title="Insamp;eacute;rer un lien"/>
+</div>

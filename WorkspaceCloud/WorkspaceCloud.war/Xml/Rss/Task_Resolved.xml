@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0">
+<channel>
+<title>Resolved</title>
+<description>RSS stream resolved</description>
+<pubDate>10/10/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+<item>
+<title>Administration- Controle à distance</title>
+<description>Amelioration du controle à distance du serveur. Clique, rafraichissement de l'amp;eacute;cran et paramètrage</description>
+<pubDate>10/10/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Visionneur d'image - Navigation</title>
+<description>Correction de la navigation dans la liste d'image pour les noms de repertoire avec accent.</description>
+<pubDate>02/10/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Numero de ligne dans l'amp;eacute;dieur</title>
+<description>Ajout du numero de ligne dans l'amp;eacute;dieur.</description>
+<pubDate>01/10/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Ajout d'un lien de lecture total du fichier.</title>
+<description>Ajout d'un lien de lecture total du fichier.</description>
+<pubDate>29/09/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Correction du damp;eacute;calage de lecture de fichier partiel.</title>
+<description>Correction du damp;eacute;calage de lecture de fichier partiel.</description>
+<pubDate>28/09/2008</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Pouvoir choisir le package à deployer</title>
+<description>Ajout d'une fenetre de choix du package à deployer.</description>
+<pubDate>31/10/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Chargement des fichiers</title>
+<description>Chargement des fichiers partiellement. Navigation dans le fichier et chargement à la demande.</description>
+<pubDate>10/10/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Optimisation</title>
+<description>Recharge le menu à chaque changement de repertoire ou fichier.</description>
+<pubDate>08/08/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java - Optimisation</title>
+<description>Ne recharge pas completement la page lors de la navigation ou de l'edition d'un fichier.</description>
+<pubDate>27/07/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Creation de Jar/War</title>
+<description>Correction du bug de corruption des fichier Jar et War.</description>
+<pubDate>03/07/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Editeur Java</title>
+<description>Execute la completion lorsque l'on appui sur les touches 'ctrl' + '.' en même temp.</description>
+<pubDate>17/01/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Page d'accueil</title>
+<description>Affichage de la date de publication des flux rss dans la page d'accueil.</description>
+<pubDate>16/01/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Server Web</title>
+<description>Redepoyement du serveur Web à partir du repertoire "Root Deploy" configurer dans le serveur d'application.</description>
+<pubDate>16/01/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation de projet</title>
+<description>Redirection de la sortie system (console) vers un flux de chaine de caractère. Pour affichage à l'utilisateur.</description>
+<pubDate>16/01/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation</title>
+<description>Revu des traces de compilation. Modifications au niveau de l'affichage</description>
+<pubDate>12/01/2007</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug : point d'arrêt</title>
+<description>Pouvoir faire un "clean" sur la compilation.</description>
+<pubDate>19/09/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Clean sur la cramp;eacute;ation d'un war</title>
+<description>Pouvoir faire un "clean" sur la cramp;eacute;ation d'un war.</description>
+<pubDate>19/09/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Supprimer tous les login/password</title>
+<description>Supprimer tous les login/password des fichiers xsl.</description>
+<pubDate>25/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Problème d'encodage des accents dans les url</title>
+<description>Encodage en ISO-8859-1 pour ramp;eacute;gler le problème d'encodage des accents dans les url.</description>
+<pubDate>19/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Servlet de visualisation des images</title>
+<description>Faire une servlet qui hamp;eacute;rite de la servlet de visualisation des images qui prend en compte le chemin principale de l'application pour visualiser les images dans le but de cacher le chemin ramp;eacute;amp;eacute;l de l'image.</description>
+<pubDate>15/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Visualisation d'image gestion de la taille des images</title>
+<description>Dans le visualisateur d'image, faire en sorte que la taille de l'image soit pramp;eacute;server si elle est inferieure à la taille demandamp;eacute;. Cette option doit être paramètrable.</description>
+<pubDate>15/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Maximum dans la taille des images à visualiser</title>
+<description>Dans le visualisateur d'image, mettre un maximum dans la taille des images à visualiser. Pour amp;eacute;viter les 'Out of memory'.</description>
+<pubDate>15/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Page de visualisation des images</title>
+<description>Damp;eacute;but de la page de visualisation des images.</description>
+<pubDate>14/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Problème des projet pas initialisamp;eacute; pour CVS</title>
+<description>Resolustion du problème d'affichage lorsqu'un projet n'a pas de paramètres d'initialisamp;eacute; pour CVS.</description>
+<pubDate>14/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Revoir l'IHM</title>
+<description>Revoir l'IHM du versionning et de l'explorateur de fichier.</description>
+<pubDate>13/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Action pour compiler</title>
+<description>Nouvelle action pour compiler directement les classes.</description>
+<pubDate>13/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation totale du projet</title>
+<description>Afficher le resultat de la compilation totale du projet.</description>
+<pubDate>12/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Revenir à la racine du projet</title>
+<description>Avoir la possibilitamp;eacute; de revenir à la racine du projet.</description>
+<pubDate>11/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation via Ant</title>
+<description>Compilation complete d'un projet via Ant.</description>
+<pubDate>10/08/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Gestion des classpath</title>
+<description>Amamp;eacute;lioration sur la gestion des classpath pour la compilation.</description>
+<pubDate>05/07/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>War explosamp;eacute;</title>
+<description>Possibilitamp;eacute; de cramp;eacute;er un War explosamp;eacute;.</description>
+<pubDate>20/06/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Cramp;eacute;ation Jar et Zip</title>
+<description>Pouvoir specifier plusieurs repertoires sources pour la cramp;eacute;ation d'un Jar ou d'un Zip.</description>
+<pubDate>20/06/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Packages Jar et War</title>
+<description>Cramp;eacute;ation des packages Jar et War.</description>
+<pubDate>12/06/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Arreter et demarrer le debug</title>
+<description>Pouvoir arreter et demarrer une connection de debug.</description>
+<pubDate>19/02/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Debug</title>
+<description>Pouvoir debuger une autre application.</description>
+<pubDate>19/02/2006</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Tag TagXmlValue</title>
+<description>Modification du tag TagXmlValue pour pouvoir stocker le resultat d'un XPath en request ou en session</description>
+<pubDate>02/10/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Colorization syntaxique</title>
+<description>Colorization syntaxique des fichiers Java</description>
+<pubDate>02/10/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Supprimer un fichier de CVS</title>
+<description>Pouvoir supprimer un fichier de CVS</description>
+<pubDate>18/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Importer un projet</title>
+<description>CVS - Import d'un projet.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Check out d'un projet</title>
+<description>CVS - Check out d'un projet.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Ajout d'un repertoire ou d'un fichier</title>
+<description>CVS - Ajout d'un repertoire ou d'un fichier.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Mise à jour d'un repertoire ou d'un fichier</title>
+<description>CVS - Mise à jour d'un repertoire ou d'un fichier.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Commit d'un repertoire ou d'un fichier</title>
+<description>CVS - Commit d'un repertoire ou d'un fichier.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>CVS : Ignorer un fichier ou un repertoire</title>
+<description>CVS - Ignorer un fichier ou un repertoire.</description>
+<pubDate>12/06/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Trier les fichiers et repertoires</title>
+<description>Trier les noms des fichiers et repertoires par le nom de fichier.</description>
+<pubDate>25/01/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Chemin de compilation des classes</title>
+<description>Garder le chemin de compilation des classes et de cramp;eacute;ation de Jar, dans la popup de changement de projet.</description>
+<pubDate>10/01/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Problème de scrollbar</title>
+<description>Correction du problème de scrollbar dans l'explorateur de fichier.</description>
+<pubDate>10/01/2005</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Actions sans authentification</title>
+<description>Gerer les actions qui n'ont pas besoin d'authentification avec une servlet 'Filter' et paramètrable dans le fichier 'FrmWrk_Servlet.xml'.</description>
+<pubDate>20/12/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Parcourir des repertoires d'un projets</title>
+<description>Faire une fenetre de parcourir des repertoires d'un projets simplifiamp;eacute;e.</description>
+<pubDate>15/12/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Securitamp;eacute; du site</title>
+<description>Gerer la securitamp;eacute; du site à partir d'un fichier Xml et d'un fichier xsl.</description>
+<pubDate>07/12/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Taglib de parcoure de document Xml</title>
+<description>Dans les taglib de parcoure de document Xml. Pouvoir gerer les XPath complets.</description>
+<pubDate>07/12/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation d'une classe</title>
+<description>Pouvoir specifier plusieurs repertoires de compilation d'une classe.</description>
+<pubDate>22/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Taglib de parcoure de document Xml</title>
+<description>Pouvoir parcourir un fichier Xml à partir de Taglib.</description>
+<pubDate>20/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Gestion Xsl et Xml à partir de Taglib</title>
+<description>Pouvoir executer un fichier Xsl sur un Xml et recuperer le resultat sous la forme d'un objet Xml. Pouvoir parcourir le resultat Xml à partir de Taglib.</description>
+<pubDate>20/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Edition de fichier</title>
+<description>Faire une page d'edition de fichier pour l'explorateur de fichier.</description>
+<pubDate>15/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Bouton de suppression de repertoire</title>
+<description>Ne plus afficher le bouton de suppression de repertoire.
+      - Modifier le composant 'TreeViewFile.jsp' pour qu'il accepte un autre parametre que 'pathToExpand' dans la liste des fichiers.
+      - Modifier la page 'EditorJava/page.jsp' pour passer soit 'pathToExpand' si il est defini dans la requete soit 'path' en parametre au composant 'TreeViewFile.jsp'.
+      - Ce qui permetra d'enlever la definition de 'pathToExpand' dans le composant 'ComboBoxProjet.jsp'.</description>
+<pubDate>13/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Trace de compilation</title>
+<description>Ajouter une fenetre qui affiche la trace de compilation d'une classes.</description>
+<pubDate>13/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>TagLib d'affichage d'un objet en request ou session</title>
+<description>Modification du TagLib d'affichage d'un objet contenu en request ou en session, pour encoder la valeur de l'objet.</description>
+<pubDate>13/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>TagLib d'affichage d'un objet en request ou session</title>
+<description>Creation d'un nouveau TagLib d'affichage d'un objet contenu en request ou en session.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Icone de creation de Zip</title>
+<description>Faire une nouvelle icone de creation de Zip.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Icone de suppression de repertoire</title>
+<description>Faire une nouvelle icone de suppression de repertoire.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Cramp;eacute;ation de Zip</title>
+<description>Dans l'explorateur de fichier: Faire cramp;eacute;er un service de cramp;eacute;ation de Zip de repertoire.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Copier Renommer un fichier</title>
+<description>Pouvoir renommer un fichier en même temps que la copie ou le deplacement du fichier. Si on saisie un nom de fichier à la place d'un repertoire il faut renommer le fichier.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Compilation d'une classe</title>
+<description>Affiche le retour d'erreur dans la fenetre de compilation d'une classe.</description>
+<pubDate>12/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Upload</title>
+<description>Corriger le service d'Upload.</description>
+<pubDate>06/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Telechargement specifique d'image</title>
+<description>Faire une servlet de telechargement specifique d'image. (En sinspirant de 'framework.action.ActionFileReader') Qui redimentionnerait l'image en fonction de la taille passamp;eacute; en paramètre par la requête.</description>
+<pubDate>04/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Executer des commandes</title>
+<description>Pouvoir executer des commandes (Shutdown, reboot, etc...)</description>
+<pubDate>04/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>framework.action.ActionFileReader</title>
+<description>Explorateur de fichier: Dans la servlet 'framework.action.ActionFileReader' donner le même nom du fichier telecharger que le nom du fichier source.</description>
+<pubDate>01/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Download de fichier</title>
+<description>Explorateur de fichier: Pouvoir downloader n'importe quel type de fichier. (passer un content-type à la servlet 'framework.action.ActionFileReader' en remplacement du content-type pris en compte)</description>
+<pubDate>01/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Explorateur de fichier</title>
+<description>Developpement de l'explorateur de fichier.</description>
+<pubDate>01/10/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+<item>
+<title>Renomer la page 'PagePhoto.jsp'</title>
+<description>Renomer le fichier '/Web/Page/FileBrowser/PagePhoto.jsp' en 'Page.jsp'</description>
+<pubDate>20/09/2004</pubDate>
+<link>http://workspace.no-ip.info/WorkSpace/action.servlet?event=Index</link>
+</item>
+</channel>
+</rss>

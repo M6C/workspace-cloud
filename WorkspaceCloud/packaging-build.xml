@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="copy" name="WorkspaceCloud">
+	<target name="copy" description="Copy Framework Lib">
+		<copy todir="war/WEB-INF/lib">
+			<fileset dir="../FrameWork/lib" includes="*.jar"/>
+			<fileset dir="../FrameWork_TagLib/lib" includes="*.jar"/>
+			<fileset dir="../FrameWork_Trace/lib" includes="*.jar"/>
+			<fileset dir="../FrameWork_Util/lib" includes="*.jar"/>
+		</copy>
+	</target>
+</project>

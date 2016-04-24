@@ -1,0 +1,699 @@
+<ROOT>
+    <APPLICATIONS>
+        <APPLICATION Name="FrameWork">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/FrameWork.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar</CLASSPATH>
+            </BUILD>
+            <JDK Name="j2sdk1.4.2_10"/>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_Html">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_Html</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/FrameWork_Html.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_Html</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_Ihm">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_Ihm</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/FrameWork_Ihm.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_Ihm</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_Lib">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_Lib</PATH>
+            </PATHS>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_Lib</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_TagLib">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_TagLib</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/FrameWork_TagLib.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_TagLib</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar</CLASSPATH>
+            </BUILD>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_Trace">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_Trace</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/FrameWork_Trace.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_Trace</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="FrameWork_Util">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/FrameWork_Util</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/FrameWork_Util.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>FrameWork_Util</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="WorkSpace_Ftp">
+            <PATHS>
+                <PATH Name="Main">ftp://david.roca:32143214@ftpperso.free.fr</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="WorkSpace_Dev">
+            <PATHS>
+                <!--PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/WorkSpace</PATH-->
+                <PATH Name="Main">WorkSpace</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/WorkSpace/WEB-INF/classes</PATH>
+                <!--PATH Name="Class">/bin</PATH-->
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="War" Name="Deploy_Dev" Filename="[WorkSpace_Depl_Dev]" Exploded="true">
+                    <CONTENT From="/WorkSpace" To=""/>
+                    <!--CONTENT From="/bin" To="/WEB-INF/classes"/-->
+                    <CONTENT From="[FrameWork]/lib/FrameWork.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_TagLib]/lib/FrameWork_TagLib.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Trace]/lib/FrameWork_Trace.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Util]/lib/FrameWork_Util.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Lib]/lib" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_Lib]/lib/ant/1.7.1" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_TagLib]/tld" To="/WEB-INF/tld"/>
+                </PACKAGE>
+                <PACKAGE Type="War" Name="Local_Dir" Filename="/WorkSpace.war" Exploded="true">
+                    <CONTENT From="/WorkSpace" To=""/>
+                    <!--CONTENT From="/bin" To="/WEB-INF/classes"/-->
+                    <CONTENT From="[FrameWork]/FrameWork.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_TagLib]/lib/FrameWork_TagLib.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Trace]/lib/FrameWork_Trace.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Util]/lib/FrameWork_Util.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Lib]/lib" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_Lib]/lib/ant/1.7.1" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_TagLib]/tld" To="/WEB-INF/tld"/>
+                </PACKAGE>
+                <PACKAGE Type="War" Name="Local_File" Filename="/war/WorkSpace.war">
+                    <CONTENT From="/WorkSpace" To=""/>
+                    <!--CONTENT From="/bin" To="/WEB-INF/classes"/-->
+                    <CONTENT From="[FrameWork]/lib/FrameWork.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_TagLib]/lib/FrameWork_TagLib.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Trace]/lib/FrameWork_Trace.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Util]/lib/FrameWork_Util.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Lib]/lib" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_Lib]/lib/ant/1.7.1" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_TagLib]/tld" To="/WEB-INF/tld"/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>WorkSpace</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_TagLib</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Trace</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-antlr.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-bcel.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-bsf.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-log4j.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-oro.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-regexp.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-apache-resolver.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-commons-logging.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-commons-net.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-icontract.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-jai.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-javamail.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-jdepend.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-jmf.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-jsch.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-junit.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-launcher.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-netrexx.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-nodeps.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-starteam.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-stylebook.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-swing.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-trax.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-vaj.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-weblogic.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-xalan1.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/ant-xslp.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/xercesImpl.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/ant/1.7.1/xml-apis.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/tools.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/cvslib_36.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/hibernate3.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/JevaESUI2001-03-03.jar</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/mysql-connector-java-5.1.5-bin.jar</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jsp.jar</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\client\jboss-j2ee.jar</CLASSPATH>
+            </BUILD>
+            <JDK Name="jdk1.6.0_14"/>
+            <SERVER Name="JBoss 4.0.5 Dev"/>
+        </APPLICATION>
+        <APPLICATION Name="WorkSpace_Prod">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/WorkSpace</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/WorkSpace/WEB-INF/classes</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="War" Name="Deploy_Prod" Filename="[WorkSpace_Depl_Prod]" Exploded="true">
+                    <CONTENT From="/WorkSpace" To=""/>
+                    <CONTENT From="/bin" To="/WEB-INF/classes"/>
+                    <CONTENT From="[FrameWork]/lib/FrameWork.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_TagLib]/lib/FrameWork_TagLib.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Trace]/lib/FrameWork_Trace.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Util]/lib/FrameWork_Util.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Lib]/lib" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_Lib]/lib/ant/1.7.1" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_TagLib]/tld" To="/WEB-INF/tld"/>
+                </PACKAGE>
+            </PACKAGING>
+            <JDK Name="jdk1.6.0_14"/>
+            <SERVER Name="JBoss 4.0.5"/>
+        </APPLICATION>
+        <APPLICATION Name="Catalogue">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/Hbn_Catalogue</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="War" Name="War_Dir" Filename="/Catalogue.war">
+                    <CONTENT From="/WorkSpace" To=""/>
+                    <CONTENT From="/bin" To="/WEB-INF/classes"/>
+                    <CONTENT From="[FrameWork]/FrameWork.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_TagLib]/lib/FrameWork_TagLib.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Trace]/lib/FrameWork_Trace.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Util]/lib/FrameWork_Util.jar" To="/WEB-INF/lib"/>
+                    <CONTENT From="[FrameWork_Lib]/lib" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_Lib]/lib/ant/1.7.1" To="/WEB-INF/lib" Subdirectory="false"/>
+                    <CONTENT From="[FrameWork_TagLib]/tld" To="/WEB-INF/tld"/>
+                </PACKAGE>
+            </PACKAGING>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Catalogue</LOCAL_DIRECTORY>
+                <MODULE_NAME>Catalogue</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_TagLib</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="Path">[FrameWork_Lib]/lib/mysql-connector-java-5.1.5-bin.jar</CLASSPATH>
+            </BUILD>
+            <JDK Name="j2sdk1.4.2_10"/>
+            <SERVER Name="JBoss 4.0.5"/>
+        </APPLICATION>
+        <APPLICATION Name="WorkSpace_Depl_Dev">
+            <PATHS>
+                <PATH Name="Main">/D:/jboss-4.0.5.GA/server/dev/deploy/WorkSpace.war</PATH>
+            </PATHS>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>WorkSpace</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_TagLib</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar</CLASSPATH>
+            </BUILD>
+              <JDK Name="j2sdk1.4.2_10"/>
+        </APPLICATION>
+        <APPLICATION Name="WorkSpace_Depl_Prod">
+            <PATHS>
+                <PATH Name="Main">/D:/jboss-4.0.5.GA/server/default/deploy/WorkSpace.war</PATH>
+            </PATHS>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/D:/Dev/Travaux/Java/Eclipse/Workspace</LOCAL_DIRECTORY>
+                <MODULE_NAME>WorkSpace</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+            <BUILD>
+                <CLASSPATH Type="Application">FrameWork</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_TagLib</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Util</CLASSPATH>
+                <CLASSPATH Type="Application">FrameWork_Lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\lib</CLASSPATH>
+                <CLASSPATH Type="External">D:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar</CLASSPATH>
+            </BUILD>
+              <JDK Name="j2sdk1.4.2_10"/>
+        </APPLICATION>
+        <APPLICATION Name="JoinFile">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/JoinFile</PATH>
+                <PATH Name="Source">/src</PATH>
+                <PATH Name="Class">/bin</PATH>
+            </PATHS>
+            <PACKAGING>
+                <PACKAGE Type="Jar" Name="Default" Filename="/lib/JoinFile.jar">
+                    <CONTENT From="/bin" To=""/>
+                </PACKAGE>
+            </PACKAGING>
+        </APPLICATION>
+        <APPLICATION Name="mydomain">
+            <PATHS>
+                <PATH Name="Main">/D:/bea/user_projects/mydomain</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="mydomainDev">
+            <PATHS>
+                <PATH Name="Main">/D:/bea/user_projects/mydomaindev</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="C:">
+            <PATHS>
+                <PATH Name="Main">/C:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="D:">
+            <PATHS>
+                <PATH Name="Main">/D:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="E:">
+            <PATHS>
+                <PATH Name="Main">/E:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="F:">
+            <PATHS>
+                <PATH Name="Main">/F:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="G:">
+            <PATHS>
+                <PATH Name="Main">/G:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="H:">
+            <PATHS>
+                <PATH Name="Main">/H:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="I:">
+            <PATHS>
+                <PATH Name="Main">/I:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="J:">
+            <PATHS>
+                <PATH Name="Main">/J:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="K:">
+            <PATHS>
+                <PATH Name="Main">/K:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="L:">
+            <PATHS>
+                <PATH Name="Main">/L:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="M:">
+            <PATHS>
+                <PATH Name="Main">/M:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="O:">
+            <PATHS>
+                <PATH Name="Main">/O:/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="Photo">
+            <PATHS>
+                <PATH Name="Main">/D:/Photos/CD01</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="Projet01">
+            <PATHS>
+                <PATH Name="Main">/E:/TEMP/Projet01/</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+            <VERSIONNING>
+                <LOCAL_DIRECTORY>/E:/TEMP</LOCAL_DIRECTORY>
+                <MODULE_NAME>Projet01</MODULE_NAME>
+                <SERVER_HOSTNAME>localhost</SERVER_HOSTNAME>
+                <SERVER_PORT>2401</SERVER_PORT>
+                <SERVER_REPOSITORY>/CVS</SERVER_REPOSITORY>
+                <USER>Administrateur</USER>
+                <PASSWORD>32143214</PASSWORD>
+            </VERSIONNING>
+        </APPLICATION>
+        <APPLICATION Name="JossDomain">
+            <PATHS>
+                <PATH Name="Main">/D:/bea/user_projects/jossdomain</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="JossProject">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/JossProject</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="XTimeDomain">
+            <PATHS>
+                <PATH Name="Main">/D:/bea/user_projects/jossdomain</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+        <APPLICATION Name="XTimeProject">
+            <PATHS>
+                <PATH Name="Main">/D:/Dev/Travaux/Java/Eclipse/Workspace/JossProject</PATH>
+                <PATH Name="Class"></PATH>
+                <PATH Name="Jar"></PATH>
+            </PATHS>
+        </APPLICATION>
+    </APPLICATIONS>
+    <JDKS>
+      <JDK Name="jdk1.4">
+        <PATH Name="Home">E:\JBuilderX\jdk1.4</PATH>
+        <JRE>
+          <PATH Name="Home">jre</PATH>
+          <PATH Name="Lib">lib</PATH>
+        </JRE>
+      </JDK>
+      <JDK Name="j2sdk1.4.2_10">
+        <PATH Name="Home">D:\j2sdk1.4.2_10</PATH>
+        <JRE>
+          <PATH Name="Home">jre</PATH>
+          <PATH Name="Lib">lib</PATH>
+        </JRE>
+      </JDK>
+      <JDK Name="jdk1.6.0_14">
+        <PATH Name="Home">D:\jdk1.6.0_14</PATH>
+        <JRE>
+          <PATH Name="Home">jre</PATH>
+          <PATH Name="Lib">lib</PATH>
+        </JRE>
+      </JDK>
+    </JDKS>
+    <SERVERS>
+        <SERVER Name="JBoss 4.0.2" Type="Web Application">
+            <PATHS>
+                <PATH Name="Root Deploy">
+                    D:\jboss-4.0.2\server\default\deploy
+                </PATH>
+            </PATHS>
+            <COMMANDS>
+                <COMMAND Name="Deploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=deploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Redeploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=redeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Undeploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=undeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+            </COMMANDS>
+        </SERVER>
+       <SERVER Name="JBoss 4.0.5" Type="Web Application">
+            <PATHS>
+                <PATH Name="Root Deploy">
+                    D:\jboss-4.0.5.GA\server\default\deploy
+                </PATH>
+            </PATHS>
+            <COMMANDS>
+                <COMMAND Name="Deploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=deploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Redeploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=redeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Undeploy">
+                    <![CDATA[http://localhost:8080/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=undeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+            </COMMANDS>
+        </SERVER>
+       <SERVER Name="JBoss 4.0.5 Dev" Type="Web Application">
+            <PATHS>
+                <PATH Name="Root Deploy">
+                    D:\jboss-4.0.5.GA\server\dev\deploy
+                </PATH>
+            </PATHS>
+            <COMMANDS>
+                <COMMAND Name="Deploy">
+                    <![CDATA[http://localhost:8380/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=deploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Redeploy">
+                    <![CDATA[http://localhost:8380/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=redeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+                <COMMAND Name="Undeploy">
+                    <![CDATA[http://localhost:8380/jmx-console/HtmlAdaptor?action=invokeOpByName&name=jboss.system:service%3DMainDeployer&methodName=undeploy&argType=java.net.URL&arg0=]]>
+                </COMMAND>
+            </COMMANDS>
+        </SERVER>
+    </SERVERS>
+    <PROFILES>
+        <PROFILE Name="Admin">
+            <APPLICATIONS>
+                <APPLICATION Name="FrameWork"/>
+                <APPLICATION Name="FrameWork_Html"/>
+                <APPLICATION Name="FrameWork_Ihm"/>
+                <APPLICATION Name="FrameWork_Lib"/>
+                <APPLICATION Name="FrameWork_TagLib"/>
+                <APPLICATION Name="FrameWork_Trace"/>
+                <APPLICATION Name="FrameWork_Util"/>
+                <APPLICATION Name="WorkSpace_Dev"/>
+                <APPLICATION Name="WorkSpace_Prod"/>
+                <APPLICATION Name="WorkSpace_Ftp"/>
+                <APPLICATION Name="WorkSpace_Depl_Dev"/>
+                <APPLICATION Name="WorkSpace_Depl_Prod"/>
+                <APPLICATION Name="Catalogue"/>
+                <APPLICATION Name="JoinFile"/>
+                <APPLICATION Name="mydomain"/>
+                <APPLICATION Name="mydomainDev"/>
+                <APPLICATION Name="C:"/>
+                <APPLICATION Name="D:"/>
+                <APPLICATION Name="E:"/>
+                <APPLICATION Name="F:"/>
+                <APPLICATION Name="G:"/>
+                <APPLICATION Name="Photo"/>
+                <APPLICATION Name="Projet01"/>
+            </APPLICATIONS>
+        </PROFILE>
+        <PROFILE Name="Joss">
+            <APPLICATIONS>
+                <APPLICATION Name="JossDomain"/>
+                <APPLICATION Name="JossProject"/>
+                <APPLICATION Name="Photo"/>
+            </APPLICATIONS>
+        <JDKS>
+          <JDK Name="jdk1.4"/>
+        </JDKS>
+        </PROFILE>
+        <PROFILE Name="XTime">
+            <APPLICATIONS>
+                <APPLICATION Name="XTimeDomain"/>
+                <APPLICATION Name="XTimeProject"/>
+            </APPLICATIONS>
+        <JDKS>
+          <JDK Name="jdk1.4"/>
+        </JDKS>
+        </PROFILE>
+        <PROFILE Name="Photo">
+            <APPLICATIONS>
+                <APPLICATION Name="Photo"/>
+            </APPLICATIONS>
+        <JDKS>
+          <JDK Name="jdk1.4"/>
+        </JDKS>
+        </PROFILE>
+    </PROFILES>
+    <USERS>
+        <USER Name="droca">
+            <LOGIN>droca</LOGIN>
+            <PASSWORD>jesuis2con</PASSWORD>
+            <PROFILES>
+                <PROFILE Name="Admin"/>
+            </PROFILES>
+        </USER>
+        <USER Name="Joss">
+            <LOGIN>joss</LOGIN>
+            <PASSWORD>seafrance</PASSWORD>
+            <PROFILES>
+                <PROFILE Name="Joss"/>
+            </PROFILES>
+        </USER>
+        <USER Name="XTime">
+            <LOGIN>xtime</LOGIN>
+            <PASSWORD>nelson</PASSWORD>
+            <PROFILES>
+                <PROFILE Name="XTime"/>
+            </PROFILES>
+        </USER>
+        <USER Name="Alexandre">
+            <LOGIN>alexandre</LOGIN>
+            <PASSWORD>saintdenis</PASSWORD>
+            <PROFILES>
+                <PROFILE Name="Photo"/>
+            </PROFILES>
+        </USER>
+    </USERS>
+</ROOT>

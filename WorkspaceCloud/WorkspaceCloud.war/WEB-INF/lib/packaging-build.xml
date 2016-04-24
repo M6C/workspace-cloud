@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="jar" name="FrameWork.jar">
+<target name="jar" depends="N10004"/>
+<target name="N10004" description="lib/FrameWork.jar">
+<jar destfile="lib/FrameWork.jar" manifest="src/META-INF/MANIFEST.MF">
+<zipfileset dir="bin" includes="**/*.class"/>
+</jar>
+</target>
+</project>

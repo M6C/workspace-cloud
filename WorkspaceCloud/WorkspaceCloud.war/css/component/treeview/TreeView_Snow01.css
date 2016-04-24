@@ -1,0 +1,143 @@
+table.treeview {
+	background-color:white;
+	border-collapse:collapse;
+	border-spacing:0px 0px 0px 0px;
+	border: 0px solid black;
+	padding:0px 0px 0px 0px;
+}
+/*                   ScrollBar                     */
+div.treeviewScrollBar {
+	overflow-x:auto;
+	overflow-y:auto;
+	background-color: white;
+	border: 1px solid #84B2C6;
+}
+/*                     Header                      */
+th.treeviewHeader {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 2px;
+	PADDING-TOP: 2px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: smaller;
+	TEXT-ALIGN: center;
+	border: 0px solid black;
+	color:#505050;
+	background-color: #E8F8FF;
+}
+/*                     Footer                      */
+td.treeviewFooter {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 3px;
+	PADDING-TOP: 7px;
+	FONT-WEIGHT: bold;
+	WHITE-SPACE: nowrap;
+	TEXT-ALIGN: center
+	border: 0px solid black;
+	background-color: white;
+}
+/*                    Top-Left                     */
+td.treeviewTopLeft {
+	WIDTH: 10px;
+	HEIGHT: 5px;
+	FONT-SIZE: 1px;
+	background-image: url(/img/TreeView/boxTL.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	border: 0px solid black;
+}
+/*                      Top                        */
+td.treeviewTop {
+	WIDTH: 100%;
+	HEIGHT: 5px;
+	background-image: url(/img/TreeView/boxTop.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	border: 0px solid black;
+}
+/*                    Top-Right                    */
+td.treeviewTopRight {
+	WIDTH: 10px;
+	HEIGHT: 5px;
+	background-image: url(/img/TreeView/boxTR.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	border: 0px solid black;
+}
+/*                      Left                       */
+td.treeviewLeft {
+	WIDTH: 10px;
+	background-image: url(/img/TreeView/boxLeft.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	border: 0px solid black;
+}
+/*                      Main                       */
+td.treeviewMain {
+/*	BACKGROUND-COLOR: white;*/
+	border: 0px solid black;
+	font-size:smaller;
+}
+a.treeviewMain:link {
+	color: blue;
+}
+a.treeviewMain:visited {
+	color: blue;
+}
+a.treeviewMain:hover {
+	color: blue;
+/*	font-weight: bold; */
+}
+a.treeviewMain:active {
+	color: blue;
+}
+a.treeviewHeader:link {
+	color: #B8B8B8;
+}
+a.treeviewHeader:visited {
+	color: #B8B8B8;
+}
+a.treeviewHeader:hover {
+	color: #B8B8B8;
+/*	font-weight: bold; */
+}
+a.treeviewHeader:active {
+	color: #B8B8B8;
+}
+/*                     Right                       */
+td.treeviewRight {
+	WIDTH: 10px;
+	background-image: url(/img/TreeView/boxRight.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	border: 0px solid black;
+}
+/*                  Bottom-Left                    */
+td.treeviewBottomLeft {
+	WIDTH: 10px;
+	HEIGHT: 10px;
+	background-image: url(/img/TreeView/boxBL.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	border: 0px solid black;
+}
+/*                    Bottom                       */
+td.treeviewBottom {
+	WIDTH: 100%;
+	HEIGHT: 10px;
+	background-image: url(/img/TreeView/boxBottom.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	border: 0px solid black;
+}
+/*                  Bottom-Right                   */
+td.treeviewBottomRight {
+	WIDTH: 10px;
+	HEIGHT: 10px;
+	FONT-SIZE: 1px;
+	background-image: url(/img/TreeView/boxBR.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	border: 0px solid black;
+}

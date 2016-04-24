@@ -1,0 +1,116 @@
+<%@ taglib uri="Framework_Taglib_Html.tld" prefix="html" %>
+<%@ taglib uri="Framework_Taglib_List.tld" prefix="list" %>
+<%@ taglib uri="Framework_Taglib_Logic.tld" prefix="logic" %>
+<%@ taglib uri="Framework_Taglib_File.tld" prefix="file" %>
+<%@ taglib uri="Framework_Taglib_Date.tld" prefix="date" %>
+<%@ taglib uri="Framework_Taglib_Eval.tld" prefix="eval" %>
+<%@ taglib uri="Framework_Taglib_Request.tld" prefix="request" %>
+<%@ taglib uri="Workspace_Taglib_Path.tld" prefix="path" %>
+
+<logic:TagIfNotDefine name="path" scope="request" checkNotEmpty="true">
+    <request:TagDefineAttribute expression="[#R$application#]" name="path" scope="request"/>
+    <path:TagPathFormat name="path" scope="request" application="#R$application#" toURI="true"/>
+</logic:TagIfNotDefine>
+<logic:TagIfDefine name="pathToExpand" scope="request">
+    <request:TagDefineAttribute scope="request" name="pathTreeViewFileExt" expression="#R$path##R$pathToExpand#"/>
+</logic:TagIfDefine>
+<logic:TagIfNotDefine name="pathToExpand" scope="request">
+    <logic:TagIfDefine name="path" scope="request">
+        <request:TagDefineAttribute scope="request" name="pathTreeViewFileExt" expression="#R$path#"/>
+    </logic:TagIfDefine>
+</logic:TagIfNotDefine>
+<table class="treeview">
+    <tr class="treeview">
+        <td class="treeviewTopLeft"><IMG class="BorderTopRight" src="/img/TreeView/b.gif"></td>
+        <td class="treeviewTop"></td>
+        <td class="treeviewTopRight"></td>
+    </tr>
+    <tr class="treeview">
+        <td class="treeviewLeft"></td>
+        <td class="treeviewFileMain">
+            <table class="treeviewFile">
+                <tr class="treeviewFile" id="title" height="18px">
+                    <th class="treeviewFile" width="100%">Images</th>
+                </tr>
+                <tr class="treeviewFile">
+                    <td class="treeviewFile" colspan="5">
+                        <div class="treeviewFileScrollBar">
+                            <table class="treeviewFileList">
+                                <tr class="treeviewFileList">
+                                    <th style="font-size:0px;" width="100%" colspan="3">&nbsp;</th>
+                                </tr>
+                                <tr class="treeviewFileList">
+                                <file:TagFileList path="#R$pathTreeViewFileExt#" pathToExpand="" indexStart="#R$navIndex#" indexEnd="6" sortMethod="getName" filter="(gif|jpg|jpeg)" name="listFileImage" scope="request">
+                                    <file:TagFileListItem name="myFile" scope="request"/>
+									<%--logic:TagIf expression="#R$myFile.File.isFile#"--%>
+									<%if (((framework.taglib.file.bean.BeanFile)request.getAttribute("myFile")).isFile()) {%>
+                                        <request:TagDefineCount name="count" scope="request"/>
+                                <TD class="treeviewFileList" align="center" width="33%">
+                                <table cellspacing="0" cellpadding="0" width="80%">
+                                                    <tr height="1"><td></td><td></td><td>
+                                                    <IMG src="/img/TreeView/b.gif" height="1" width="134">
+                                                    </td></tr>
+                                                    <tr><td colspan="3" bgcolor="#CCCCCC">
+                                                    <html:TagFont attrSize="2" content="#R$myFile.File.getName#"/>
+                                                    </td></tr><tr>
+                                                    <td width="*" align="left" valign="top" bgcolor="#f6ffc6">
+                                                    <font size="2"><eval:TagEval expression='""+(#R$myFile.File.length#/1000)'/>&nbsp;Ko</font>
+                                </td><td>
+                                                <br>
+                                                <IMG src="/img/TreeView/b.gif" height="105" width="1">
+                                                <br><font size="1">&nbsp;</font>
+                                </td><td width="134" height="105" align="center">
+                                                <html:TagA attrHref="javascript:openWindow('/Actionimagereader?application=#R$application#&file=#R$pathToExpand#/#R$myFile.File.name#');">
+                                                    <html:TagImg attrAlt="#R$myFile.File.getName#" attrSrc="/Actionimagereader?application=#R$application#&file=#R$pathToExpand#/#R$myFile.File.name#&width=134&height=105&resizeSmaller=false"/>
+                                                    </html:TagA>
+                                </td></tr><tr><td colspan="3" bgcolor="#CCCCCC">
+                                                    <font size="2"><date:TagDateFormat time="#R$myFile.File.lastModified#" pattern="dd/MM/yyyy HH:mm:ss"/></font>
+                                </td></tr></table><br>
+                                </TD>
+	                                <%--logic:TagIf expression="(#R$count#%3==0)"--%>
+	                                <%if ((Integer.parseInt((String)request.getAttribute("count"))%3)==0) {%>
+		                                </tr><tr class="treeviewFileList">
+									<%}%>
+									<%--/logic:TagIf--%>
+								<%}%>
+								<%--/logic:TagIf--%>
+                                </file:TagFileList>
+                                    <%if ((Integer.parseInt((String)request.getAttribute("count"))%3)!=0) {%>
+		                                <TD class="treeviewFileList">&nbsp;</td>
+									<%}%>
+									<%--/logic:TagIf--%>
+                                </tr>
+                                <tr>
+                                <td colspan="3" align="center">
+                                    <font size="2">
+                                        <file:TagFileListNavigator
+                                                       name="listFileImage"
+                                                       scope="request"
+                                                       attrHref="javascript:onClickTvFile('&application=#R$application<encoding=UTF-8>#&pathToExpand=#R$pathToExpand<encoding=ISO-8859-1>#&[index]')"
+                                                       indexName="navIndex"
+                                                       separator=" - "
+                                                       indexStart="1"
+                                                       indexStep="6"
+                                                       indexQuantity="5"
+                                                       isShowPrevious="true"
+                                                       isShowNext="true"
+                                                       libellePrevious="<- Previous "
+                                                       libelleNext=" Next ->"
+                                        />
+                                    </font>
+                                </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="treeviewRight"></td>
+    </tr>
+    <tr>
+        <td class="treeviewBottomLeft"></td>
+        <td class="treeviewBottom"></td>
+        <td class="treeviewBottomRight"><IMG class="BorderBottomRight" src="/img/TreeView/b.gif"></td>
+    </tr>
+</table>

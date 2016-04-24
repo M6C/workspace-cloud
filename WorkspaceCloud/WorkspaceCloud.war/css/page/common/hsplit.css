@@ -1,0 +1,13 @@
+td.s17 {
+  width: 7px;
+  cursor: w-resize;
+  background-image: url(/img/Style/Classic/Split/vsep.gif);
+  background-repeat: repeat-y;
+  background-position: left top;
+}
+div.s68 {
+cursor: w-resize;
+  width: 7px;
+  height: 100%;
+  background-color: black;
+}

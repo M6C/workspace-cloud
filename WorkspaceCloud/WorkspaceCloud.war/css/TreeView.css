@@ -1,0 +1,59 @@
+body {
+	scrollbar-face-color: #CCCCCC
+	scrollbar-highlight-color: buttonface;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: buttonface;
+	scrollbar-shadow-color: #000000;
+	scrollbar-arrow-color: #000000;
+	scrollbar-track-color: buttonface;	
+}
+div.TreeView_Projet_ScrollBar {
+	width:150px;height:550px;
+	overflow-x:auto;overflow-y:auto;
+	background-color: '#ffffff';
+	border: 1px solid black;
+}
+div.TreeView_Dir_ScrollBar {
+	width:240px;height:255px;
+	overflow-x:auto;overflow-y:auto;
+	background-color: '#ffffff';
+	border: 1px solid black;
+}
+div.TreeView_File_ScrollBar {
+	width:240px;height:255px;
+	overflow-x:auto;overflow-y:auto;
+	background-color: '#ffffff';
+	border: 1px solid black;
+}
+div.TreeView_Content_ScrollBar {
+	width:700px;height:480px;
+	overflow-x:auto;overflow-y:auto;
+	scrolling="yes";
+}
+.memoProjetHeader {
+	text-align: center;
+	font-size: 10pt;
+	font-family: sans-serif;
+	background-color: buttonface;
+	border: solid 1px #000000;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	width: 100%;
+}
+table.memo {
+	background-color: buttonface;
+}
+table.memoBar {
+	text-align: left;
+	background-color: buttonface;
+}
+img.memoOut {
+	background-color: buttonface;
+	border: 1px solid buttonface;
+}
+img.memoOver {
+	background-color: '#ffffff';
+	border: 1px solid buttonshadow;
+}

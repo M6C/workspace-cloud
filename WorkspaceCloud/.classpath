@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/FrameWork_TagLib.jar" sourcepath="/FrameWork_TagLib/src"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/FrameWork_Trace.jar" sourcepath="/FrameWork_Trace/src"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/FrameWork_Util.jar" sourcepath="/FrameWork_Util/src"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/FrameWork.jar" sourcepath="/FrameWork/src"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tools.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/cvslib_36.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/javax.jms.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/serializer.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xsltc.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/JevaESUI2001-03-03.jar" sourcepath="/FrameWork_Lib/JevaESUI2001-03-03/src"/>
+	<classpathentry kind="con" path="DROOLS/Drools"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

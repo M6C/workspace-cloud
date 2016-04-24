@@ -1,0 +1,184 @@
+table.treeview {
+/*    background-color:white;*/
+    width:100%;
+    height:100%;
+    border-collapse:collapse;
+    border-spacing:0px 0px 0px 0px;
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+/*                   ScrollBar                     */
+div.treeviewScrollBar {
+    overflow-x:auto;
+    overflow-y:auto;
+/*    background-color: white;*/
+    border: 0px solid #555577;/*#84B2C6;*/
+    height:100%;
+}
+/*                     Header                      */
+th.treeviewHeader {
+    padding:0px 0px 0px 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: smaller;
+    TEXT-ALIGN: center;
+    border: 0px solid black;
+/*
+    color:#505050;
+    background-color: #000070;
+*/
+    background-image: url(/img/Style/Classic/Header/Header_01.gif);
+    background-repeat: repeat-x;
+}
+/*                     Footer                      */
+td.treeviewFooter {
+    display:none;
+    padding:0px 0px 0px 0px;
+    FONT-WEIGHT: bold;
+    WHITE-SPACE: nowrap;
+    TEXT-ALIGN: center;
+    border: 0px solid black;
+    background-color: white;
+}
+/*                    Top-Left                     */
+td.treeviewTopLeft {
+    display:none;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    FONT-SIZE: 1px;
+    background-repeat: no-repeat;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                      Top                        */
+td.treeviewTop {
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    background-repeat: repeat-x;
+    background-position: top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                    Top-Right                    */
+td.treeviewTopRight {
+    display:none;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    background-repeat: no-repeat;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                      Left                       */
+td.treeviewLeft {
+    display:none;
+    WIDTH: 0px;
+    background-repeat: repeat-y;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                      Main                       */
+td.treeviewMain {
+    BACKGROUND-COLOR: white;
+    border: 0px solid black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    /*font-size:smaller;*/
+    vertical-align:top;
+    height:100%;
+    padding:0px 0px 0px 0px;
+}
+a.treeviewMain:link {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewMain:visited {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewMain:hover {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewMain:active {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewHeader:link {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewHeader:visited {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewHeader:hover {
+    text-decoration:none;
+    color: Black;
+}
+a.treeviewHeader:active {
+    text-decoration:none;
+    color: Black;
+}
+/*                     Right                       */
+td.treeviewRight {
+    display:none;
+    WIDTH: 0px;
+    background-repeat: repeat-y;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                  Bottom-Left                    */
+td.treeviewBottomLeft {
+    display:none;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    background-repeat: no-repeat;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                    Bottom                       */
+td.treeviewBottom {
+    display:none;
+    WIDTH: 100%;
+    HEIGHT: 0px;
+    background-repeat: repeat-x;
+    background-position: top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+/*                  Bottom-Right                   */
+td.treeviewBottomRight {
+    display:none;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    FONT-SIZE: 1px;
+    background-repeat: no-repeat;
+    background-position: left top;
+/*  background-color:DarkGray;*/
+    border: 0px solid black;
+    padding:0px 0px 0px 0px;
+}
+
+img.BorderTopLeft {
+    display:none;
+    WIDTH:  0px;
+    HEIGHT: 0px;
+}
+
+img.BorderBottomRight {
+    display:none;
+    WIDTH:  0px;
+    HEIGHT: 0px;
+}

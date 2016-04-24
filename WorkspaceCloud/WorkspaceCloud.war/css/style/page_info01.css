@@ -1,0 +1,107 @@
+@import url ("/css/toolbar/ToolBar_Info01.css");
+@import url ("/css/component/treeview/TreeView_Info01.css");
+@import url ("/css/component/treeview/TreeViewFile_Info01.css");
+@import url ("/css/component/combo/Completion_Info01.css");
+
+body {
+	background-image: url(/img/Style/Informatique/Background/info01.jpg);
+/*	background-color: white;*/
+	background-attachment:fixed;
+	scrollbar-face-color: #999966;//FFDD99;//FFCC66;//white;
+	scrollbar-highlight-color: #CCCCB3;//FFE494;//84B2C6;
+	scrollbar-3dlight-color: #C2C2A3;//FFCC33;//white;
+	scrollbar-darkshadow-color: #3D3D29;//CCA300;//white;
+	scrollbar-shadow-color: #5C5C3D;//E6B800;//84B2C6;
+	scrollbar-arrow-color: black;//#997300;//84B2C6;
+	scrollbar-track-color: #ADAD85;//FFEA94;//E8F8FF;
+}
+/*                 TextEditor                      */
+textarea.TextEditor {
+	overflow-x:auto;
+	overflow-y:auto;
+/*	background-color: white;*/
+	border: 1px solid #ADAD85;
+}
+textarea {
+	border: 1px solid #ADAD85;
+}
+/*                   Input                         */
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:black;//#505050;
+	background-color:#CCCCB3;
+	border-color:#697E3A;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+/*                   Select                        */
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color:black;//#505050;
+	background-color:#CCCCB3;
+	border-color:#BFB073;
+	border: #EBFFE5;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+/*                     Img                         */
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+/*                    Font                        */
+font.normal {
+	color: white;
+}
+font.inverse {
+	color: black;
+}
+
+iframe.texteditor {
+	border: 1px solid #555577;
+	font-family:sans-serif;
+	font-size:10%;
+	font-weight:bold;
+}
+
+/*-- Transparency --*/
+td.treeviewMain {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+input {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+textarea.TreeView_Content_ScrollBar {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+#theTableToDo {
+}
+#theTableResolved {
+}
+#theCellToDo {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}
+#theCellResolved {
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;
+	opacity: 0.85;
+}

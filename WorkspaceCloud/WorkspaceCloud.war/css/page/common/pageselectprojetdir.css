@@ -1,0 +1,8 @@
+@import url ("../../style/page.css");
+table.treeview {
+	width:230px;
+}
+div.treeviewScrollBar {
+	width:230px; 
+	height:230px;
+}

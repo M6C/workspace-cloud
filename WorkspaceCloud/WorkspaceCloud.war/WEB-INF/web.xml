@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>WorkSpace</display-name>
+
+  <!-- Filters -->
+  <filter>
+    <filter-name>Authentification</filter-name>
+    <filter-class>framework.filter.FilterAuthentification</filter-class>
+    <init-param>
+      <param-name>OutputName</param-name>
+      <param-value>EventAuthentification</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config_file</param-name>
+      <param-value>/Xml/FrmWrk_Config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>servlet_file</param-name>
+      <param-value>/Xml/FrmWrk_Servlet.xml</param-value>
+    </init-param>
+  </filter>
+  <filter>
+    <filter-name>Security</filter-name>
+    <filter-class>workspace.filter.FilterSecurity</filter-class>
+    <init-param>
+      <param-name>InputName</param-name>
+      <param-value>EventAuthentification</param-value>
+    </init-param>
+    <init-param>
+      <param-name>DefaultUrl</param-name>
+      <param-value>/WorkSpace/action.servlet?event=Index</param-value>
+    </init-param>
+  </filter>
+
+  <!-- Filters Mapping -->
+  <filter-mapping>
+    <filter-name>Authentification</filter-name>
+    <url-pattern>*.servlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>Security</filter-name>
+    <url-pattern>*.servlet</url-pattern>
+  </filter-mapping>
+    
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>workspacecloud.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>framework.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>security_xsl</param-name>
+      <param-value>/Xsl/WorkSpace_Security.xsl</param-value>
+    </init-param>
+    <init-param>
+      <param-name>security_xml</param-name>
+      <param-value>/Xml/WorkSpace_Security.xml</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>actionfilereader</servlet-name>
+    <servlet-class>workspace.action.ActionFileReader</servlet-class>
+    <init-param>
+      <param-name>Temporary_Directory</param-name>
+      <param-value>C:/Perso/Dev/Travaux/Java/JBuilder8/WorkSpace/Tmp/</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>actionfileupload</servlet-name>
+    <servlet-class>workspace.action.ActionFileUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Actionimagereader</servlet-name>
+    <servlet-class>workspace.action.ActionImageReader</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Actionscreenshoot</servlet-name>
+    <servlet-class>workspace.action.ActionScreenShoot</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActionMouseEvent</servlet-name>
+    <servlet-class>framework.action.ActionMouseEvent</servlet-class>
+  </servlet>
+  
+  <!-- Servlets Mapping -->
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/workspacecloud/greet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>actionfilereader</servlet-name>
+    <url-pattern>/actionfilereader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>actionfileupload</servlet-name>
+    <url-pattern>/actionfileupload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Actionimagereader</servlet-name>
+    <url-pattern>/Actionimagereader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Actionscreenshoot</servlet-name>
+    <url-pattern>/Actionscreenshoot</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActionMouseEvent</servlet-name>
+    <url-pattern>/ActionMouseEvent</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MIME Mapping -->
+  <mime-mapping>
+    <extension>css</extension>
+    <mime-type>text/css</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>gif</extension>
+    <mime-type>image/gif</mime-type>
+  </mime-mapping>
+
+  <!-- Taglibs -->
+  <taglib>
+    <taglib-uri>Framework_Taglib.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_File.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_File.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Html.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Html.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_List.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_List.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Logic.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Logic.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Request.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Request.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Eval.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Eval.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Date.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Date.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Framework_Taglib_Xml.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Framework_Taglib_Xml.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Workspace_Taglib_Versionning.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Workspace_Taglib_Versionning.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>Workspace_Taglib_Path.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tld/Workspace_Taglib_Path.tld</taglib-location>
+  </taglib>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>WorkspaceCloud.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
